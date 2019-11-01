@@ -1,24 +1,66 @@
 {
  "output_file": "settings.json",
+  "TemplateMain": {
+    "type": "textbox",
+    "value": "",
+    "label": "Default",
+    "tooltip": "Default description of info for {game}",
+    "group": "Template"
+  },
+  "TemplateGear": {
+    "type": "textbox",
+    "value": "",
+    "label": "Gear",
+    "tooltip": "Current Gear",
+    "group": "Template"
+  },
+  "TemplateGoal": {
+    "type": "textbox",
+    "value": "",
+    "label": "Goal",
+    "tooltip": "Current Goal",
+    "group": "Template"
+  },
+  "MinecraftMain": {
+    "type": "textbox",
+    "value": "",
+    "label": "Default",
+    "tooltip": "Default description of info for Minecraft",
+    "group": "Minecraft"
+  },
+  "MinecraftGear": {
+    "type": "textbox",
+    "value": "",
+    "label": "Gear",
+    "tooltip": "Current Gear",
+    "group": "Minecraft"
+  },
+  "MinecraftGoal": {
+    "type": "textbox",
+    "value": "",
+    "label": "Goal",
+    "tooltip": "Current Goal",
+    "group": "Minecraft"
+  },
   "Command": {
     "type": "textbox",
-    "value": "!command",
+    "value": "!current",
     "label": "Command",
     "tooltip": "popup for hovering over",
-    "group": "organized in this group"
+    "group": "Command"
   },
   "ResponseMessage": {
     "type": "textbox",
     "value": "the response message sent to chat",
     "label": "Response",
     "tooltip": "popup for hovering over",
-    "group": "organized in this group"
+    "group": "Command"
   },
   "ErrorMessage": {
     "type": "textbox",
     "value": "Error Message",
     "label": "Error Response",
     "tooltip": "popup for hovering over",
-    "group": "organized in this group"
+    "group": "Command"
   }
 }

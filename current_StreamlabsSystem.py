@@ -8,11 +8,11 @@ import re
 #---------------------------------------
 # [Required] Script information
 #---------------------------------------
-ScriptName = "boilerplate" #Change this
+ScriptName = "current" #Change this
 Website = "https://www.twitch.tv/Timmah_TV"
 Creator = "Timmah_TV"
 Version = "1.0.0"
-Description = "description" #Change this
+Description = "get current stuff" #Change this
 #---------------------------------------
 # Versions
 #---------------------------------------
@@ -87,8 +87,16 @@ def Init():
 
 def Execute(data):
     if data.IsChatMessage():
-        sendMessage = Parent.SendTwitchMessage if data.IsFromTwitch() else Parent.SendDiscordMessage
+        # Determine if twitch message or discord message
+        SendMessage = Parent.SendTwitchMessage if data.IsFromTwitch() else Parent.SendDiscordMessage
+
         if data.GetParam(0).lower() == Command: #Change this
+            if data.GetParam(1).lower() == "gear":
+                SendMessage("cool1")
+            elif data.GetParam(1).lower() == "goal":
+                SendMessage("cool2")
+            else:
+                SendMessage("cool3")
             # Where we process the command
     return
 
